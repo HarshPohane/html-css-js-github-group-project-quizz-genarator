@@ -45,7 +45,6 @@ line-height: 1.5;
     margin-bottom: 10px;
 }
 
-/* make labels (Level, Posts, etc.) more strong */
 .design-cards p strong {
     color: #111827;
     font-weight: 600;
@@ -81,4 +80,54 @@ line-height: 1.5;
 
 .categories-button a{
     text-decoration: none;
+}
+
+.records{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.record-container{
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  width: 400px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: 0.3s;
+}
+
+.record-container:hover{
+    transform: translateY(-5px);
+    border: 1px solid black;
+}
+
+.record-container img{
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    margin-top: 20px;
+}
+
+.record-container p{
+    padding: 10px;
+    margin: 0px;
+    font-size: 0.875rem;
+  font-weight: 500;
+ color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#main-p-class{
+   font-size: 23px;
+   font-weight: bold;
 }
