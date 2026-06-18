@@ -85,7 +85,11 @@ button{
     padding:12px;
     border:none;
     border-radius:8px;
-    background:#7d4cff;
+    background: #1d2748;
     color:white;
     cursor:pointer;
+}
+
+button:hover{
+    background-color: #6d28d9;
 }
