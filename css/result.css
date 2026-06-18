@@ -42,7 +42,7 @@ body{
 .circle{
     width:100px;
     height:100px;
-    border:6px solid #7d4cff;
+    border:6px solid green;
     border-radius:50%;
     display:flex;
     justify-content:center;
@@ -53,6 +53,14 @@ body{
 
 .score-box{
     text-align:center;
+}
+ 
+#correct{
+    color:green;
+}
+
+#wrong{
+    color:red;
 }
 
 .extra-info{
