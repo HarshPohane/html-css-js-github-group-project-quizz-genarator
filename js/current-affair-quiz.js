@@ -70,15 +70,15 @@ function loadQuestion() {
 
     for (let i = 0; i < q.options.length; i++) {
 
-    html += `<button class="option" onclick="checkAnswer(this,'${q.options[i]}')">${q.options[i]}</button>`;
-}
+        html += `<button class="option" onclick="checkAnswer(this,'${q.options[i]}')">${q.options[i]}</button>`;
+    }
 
     document.getElementById("options").innerHTML = html;
 
 }
 
-function checkAnswer(clickedButton , selectedOption){
-    if(answered) return;
+function checkAnswer(clickedButton, selectedOption) {
+    if (answered) return;
 
     answered = true;
 
@@ -86,38 +86,38 @@ function checkAnswer(clickedButton , selectedOption){
 
     let options = document.querySelectorAll(".option");
 
-    options.forEach(currentbutton =>{
+    options.forEach(currentbutton => {
 
-        if(currentbutton.innerText === correctAnswer){
+        if (currentbutton.innerText === correctAnswer) {
             currentbutton.classList.add("correct");
         }
 
-        if(currentbutton === clickedButton && selectedOption !== correctAnswer){
+        if (currentbutton === clickedButton && selectedOption !== correctAnswer) {
             currentbutton.classList.add("wrong");
-        } 
+        }
     });
 
-    if(selectedOption === correctAnswer){
+    if (selectedOption === correctAnswer) {
         score++;
         document.getElementById("result").innerHTML = "Correct Answer..!!!";
     }
 
-    else{
+    else {
         document.getElementById("result").innerHTML = "Incorrect Answer...";
     }
 }
 
-function nextQuestion(){
+function nextQuestion() {
 
     currentQuestion++;
 
-    if(currentQuestion < questions.length){
+    if (currentQuestion < questions.length) {
         loadQuestion();
     }
-    else{
+    else {
 
         document.querySelector(".quiz-box").innerHTML =
-        `<h1 style="text-align:center;color:#1e3a8a;">
+            `<h1 style="text-align:center;color:#1e3a8a;">
             Your Quiz Completed
         </h1>
 
@@ -132,9 +132,9 @@ function nextQuestion(){
     }
 }
 
-function previousQuestion(){
+function previousQuestion() {
 
-    if(currentQuestion > 0){
+    if (currentQuestion > 0) {
         currentQuestion--;
         loadQuestion();
     }
