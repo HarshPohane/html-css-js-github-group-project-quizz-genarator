@@ -53,15 +53,12 @@
         <!-- left part -->
 
         <div class="card contact-info">
-<h2>Get In Touch</h2>
+            <h2 style="text-align: center;">Get In Touch</h2>
             <div class="info-box">
-                
-
                 <img src="../images/contact-email.png" alt="email">
-
                 <div>
                     <h3>Email</h3>
-                    <p>quizmaster@gmail.com</p>
+                    <a href="mailto:thubearya97@gmail.com">quizmaster@gmail.com</a>
                 </div>
             </div>
 
@@ -69,7 +66,7 @@
                 <img src="../images/contact-pnone.png" alt="mobile">
                 <div>
                     <h3>Contact</h3>
-                    <p>+91 9876543210</p>
+                    <a href="tel:1234567897">+91 9876543210</a>
                 </div>
             </div>
 
@@ -89,39 +86,68 @@
                 </div>
             </div>
 
+            <p style="text-align: justify;">
+                We'd love to hear from you! Whether you have questions, feedback, suggestions, or need assistance with
+                Quiz Master, our team is here to help. Feel free to reach out via email, phone, or visit us in Pune,
+                Maharashtra. We are available Monday to Saturday from 9:00 AM to 6:00 PM and strive to respond to all
+                inquiries within 24 hours.
+            </p>
+
         </div>
         <!-- right part -->
 
         <div class="card contact-info">
-            <h2>Send Us A Message</h2>
-            <form>
+            <h2 style="text-align: center;">Send Us A Message</h2>
+            <form id="contact-form">
                 <div class="input-group">
                     <label>Full Name</label>
-                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Name" id="name" required>
                 </div>
 
                 <div class="input-group">
                     <label>Email Address</label>
-                    <input type="text" placeholder="Enter Email">
+                    <input type="text" placeholder="Enter Email" id="email" required>
                 </div>
 
                 <div class="input-group">
                     <label>Subject</label>
-                    <input type="text" placeholder="Enter Subject">
+                    <input type="text" placeholder="Enter Subject" id="subject" required>
                 </div>
 
                 <div class="input-group">
                     <label>Message</label>
-                    <textarea rows="6" placeholder="Write your message here..."></textarea>
+                    <textarea rows="6" placeholder="Write your message here..." id="message"></textarea>
                 </div>
 
-                <button class="btn">
-                    <i class="fas fa-paper-plane"></i>
-                    Send Message
-                </button>
+                <button class="btn" type="submit">Send Message</button>
 
             </form>
         </div>
+    </div>
+
+    <div class="question-section-container">
+
+        <h2 class="question-section">Frequently Asked Questions</h2>
+
+        <div class="questions">
+
+            <div class="question-cards">
+                <h3>How do I start a quiz?</h3>
+                <p>Select your preferred category from the dashboard and click Start Quiz.</p>
+            </div>
+
+            <div class="question-cards">
+                <h3>Can I track my scores?</h3>
+                <p>Yes, your quiz results and performance statistics are stored automatically.</p>
+            </div>
+
+            <div class="question-cards">
+                <h3>Are quizzes free?</h3>
+                <p>Yes, all quiz categories are available free for educational purposes.</p>
+            </div>
+
+        </div>
+
     </div>
 
     <footer class="footer">
@@ -150,7 +176,6 @@
             <!-- Contact -->
             <div class="footer-box">
                 <h3>Contact Us</h3>
-
                 <p> quizmaster@gmail.com</p>
                 <p> +91 9876543210</p>
                 <p> India</p>
@@ -175,6 +200,8 @@
         </div>
 
     </footer>
+    <script src="../js/message-form.js"></script>
+
 </body>
 
 </html>
