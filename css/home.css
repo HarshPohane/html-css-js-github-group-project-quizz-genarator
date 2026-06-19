@@ -67,12 +67,13 @@ cursor: pointer;
     padding:30px 20px;
     background:#18223c;
     border-radius:20px;
-    box-shadow:0 5px 20px rgb(247, 245, 245);
+    box-shadow:0 3px 10px rgb(247, 245, 245);
     transition:0.3s;
 }
 
 .stat-card:hover{
     transform:translateY(-8px);
+   
 }
 
 .stat-card h3{
@@ -92,7 +93,7 @@ cursor: pointer;
 }
 
 .category-heading{
-    font-size:2rem;
+    font-size:2.2rem;
     color:white;
     margin-bottom:50px;
     justify-content: center;
@@ -104,14 +105,14 @@ cursor: pointer;
 .category-container{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:30px;
+    gap:50px;
 }
 
 .category-card{
-    background:#ffffff;
+    background:#18223c;
     padding:30px;
     border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    box-shadow:0 3px 10px rgb(247, 245, 245);
     transition:0.3s;
     cursor:pointer;
 }
@@ -127,10 +128,11 @@ cursor: pointer;
 .category-card h3{
     margin:15px 0 10px;
     color:#6366f1;
+    font-size: 1.5rem;
 }
 
 .category-card p{
-    color:#64748b;
+    color:white;
     line-height:1.6;
 }
 
@@ -156,16 +158,17 @@ cursor: pointer;
 }
 
 .why-card{
-    background:#ffffff;
+    background:#18223c;
     width:300px;
     padding:35px 25px;
     border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    box-shadow:0 3px 10px rgb(247, 245, 245);
     transition:0.3s;
 }
 
 .why-card:hover{
     transform:translateY(-10px);
+    
 }
 
 .icon{
@@ -176,9 +179,11 @@ cursor: pointer;
 .why-card h3{
     color:#6366f1;
     margin-bottom:15px;
+    font-size: 1.5rem;
+    
 }
 
 .why-card p{
-    color:#64748b;
+    color:white;
     line-height:1.6;
 }
