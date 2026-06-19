@@ -7,6 +7,8 @@
     <title>Leaderboard</title>
     <link rel="stylesheet" href="./../css/leaderboard.css">
     <link rel="stylesheet" href="./../css/navbar.css">
+    <link rel="stylesheet" href="./../js/leaderboard.js">
+
 </head>
 <div class="container">
     <h1 class="heading"> Quiz Generator Leaderboard</h1>
@@ -36,6 +38,46 @@
 <body>
 
     <script>
+
+        let leaderboard =
+JSON.parse(localStorage.getItem("leaderboard")) || [];
+
+leaderboard.sort((a, b) => b.score - a.score);
+
+const tbody = document.getElementById("leaderboardBody");
+
+leaderboard.forEach((player, index) => {
+
+    let rank = index + 1;
+    let rankDisplay = rank;
+
+    if(rank === 1){
+        rankDisplay = "🥇";
+    }
+    else if(rank === 2){
+        rankDisplay = "🥈";
+    }
+    else if(rank === 3){
+        rankDisplay = "🥉";
+    }
+
+    tbody.innerHTML += `
+    <tr>
+        <td>${rankDisplay}</td>
+        <td>${player.name}</td>
+        <td>${player.score}/10</td>
+    </tr>
+    `;
+});
+
+function clearLeaderboard(){
+
+    if(confirm("Clear Leaderboard ?")){
+
+        localStorage.removeItem("leaderboard");
+        location.reload();
+    }
+}
        
     </script>
 
