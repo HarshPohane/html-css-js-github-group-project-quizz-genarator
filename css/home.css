@@ -73,6 +73,7 @@
     transform: translateY(-2px);
 }
 
+
 .stats-section {
     padding: 40px 8%;
     text-align: center;
@@ -221,4 +222,40 @@
 .why-card p {
     color: white;
     line-height: 1.6;
+}
+
+
+@media (max-width:768px){
+/* resposive code for hero section*/
+.imag-text-btn-box{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    margin-top: 50px;
+    
+}
+
+.h2-head{
+    font-size: 32px;
+}
+
+.short-para{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.wlc-heading{
+    justify-content: center;
+}
+
+.heroimg-ctn img{
+    width: 100%;
+    max-width: 320px;
+}
+
+#start-quizz{
+    width: 100%;
+    max-width: 250px;
+}
+
 }
