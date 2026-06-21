@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: inherit;
 }
 
 body {
@@ -30,11 +30,6 @@ body {
     margin-bottom: 30px;
 }
 
-.trophy {
-    height: 50px;
-    width: auto;
-}
-
 
 .card {
     background: #ffffff;
@@ -47,7 +42,7 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-    text-align: left;
+    text-align: center;
 }
 
 thead {
@@ -64,7 +59,7 @@ th, td {
 th {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.95rem;
+    font-size: 1.0rem;
     letter-spacing: 0.05em;
 }
 
