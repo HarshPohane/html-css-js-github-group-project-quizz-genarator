@@ -113,17 +113,9 @@ The platform promotes continuous learning, self-assessment, and healthy competit
 ---
 
 ## 👩‍💻 Contributors
-
-<img src="https://github.com/Surbhi-Patle-11.png" width="80" height="80" style="border-radius:50%">
-<img src="https://github.com/AryaThube-9.png" width="80" height="80"  style="border-radius:50%">
-<img src="https://github.com/Apurva-Khandare.png" width="80" height="80" style="border-radius:50%">
-<img src="https://github.com/HarshPohane.png" width="80" height="80" style="border-radius:50%">
-<img src="https://github.com/vishakhamokate13.png" width="80" height="80" style="border-radius:50%">
-<img src="https://github.com/dhumalsanika34-afk.png" width="80" height="80"
-style="border-radius:50%">
-
-
-
+<a href="https://github.com/Surbhi-Patle-11/html-css-js-github-group-project-quizz-genarator/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Surbhi-Patle-11/html-css-js-github-group-project-quizz-genarator" />
+</a>
 ---
 
 ## 🙏 Acknowledgements
