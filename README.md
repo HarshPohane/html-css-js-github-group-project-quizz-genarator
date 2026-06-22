@@ -1,7 +1,7 @@
 #  Quizz Master
 
- ##  Live Demo
-
+ 
+##  Live Demo
 [Live website :](https://yourwebsite.com)
 
 ---
@@ -28,7 +28,7 @@ The platform includes timed quizzes, score tracking, category-based question set
 
 ---
 
-##  Tech Stack
+
 
 ## Tech Stack
 
